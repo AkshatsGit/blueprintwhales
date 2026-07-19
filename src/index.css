@@ -134,8 +134,8 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  padding: 12px 26px;
+  gap: 8px;
+  padding: 12px 24px;
   border-radius: 12px;
   font-weight: 700;
   font-size: 0.95rem;
@@ -158,8 +158,8 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  padding: 12px 26px;
+  gap: 8px;
+  padding: 12px 24px;
   border-radius: 12px;
   font-weight: 600;
   font-size: 0.95rem;
@@ -232,13 +232,21 @@ h1, h2, h3, h4, h5, h6 {
   gap: 1.5rem;
 }
 
-@media (max-width: 1024px) {
-  .grid-4 { grid-template-columns: repeat(2, 1fr); }
-  .grid-3 { grid-template-columns: repeat(2, 1fr); }
+/* Mobile Responsive Optimization */
+@media (max-width: 900px) {
+  .desktop-nav-links {
+    display: none !important;
+  }
 }
 
-@media (max-width: 768px) {
-  .grid-2, .grid-3, .grid-4 {
+@media (max-width: 600px) {
+  .container {
+    padding: 0 1rem;
+  }
+  .nav-subtitle {
+    display: none !important;
+  }
+  .grid-4, .grid-3, .grid-2 {
     grid-template-columns: 1fr;
   }
 }
