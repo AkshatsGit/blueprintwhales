@@ -29,7 +29,7 @@ export default function Footer({ setIsAdminOpen }) {
             </div>
 
             <p style={{ fontSize: '0.875rem', color: '#94A3B8', lineHeight: 1.6, marginBottom: '16px' }}>
-              Leading remote architectural design studio specializing in hyper-realistic 3D building renders, 100% Vastu compliant 2D floorplan blueprints, and bespoke interior architecture.
+              <strong>Blueprint Whales</strong> is the best designing architects network in Lucknow, Agra, Kanpur, Noida, Rajasthan cities, and nationwide, specializing in hyper-realistic 3D building renders, 100% Vastu compliant 2D floorplan blueprints, and bespoke interior/exterior architecture.
             </p>
 
             <button
@@ -89,6 +89,18 @@ export default function Footer({ setIsAdminOpen }) {
             </div>
           </div>
 
+        </div>
+
+        {/* Local SEO Cities Grid */}
+        <div style={{
+          borderTop: '1px solid rgba(255, 255, 255, 0.08)',
+          paddingTop: '20px',
+          marginBottom: '20px',
+          fontSize: '0.8rem',
+          color: '#64748B',
+          lineHeight: 1.6
+        }}>
+          <strong>Best Designing Architects Network Serviced Locations:</strong> Lucknow | Agra | Kanpur | Noida | Gurgaon | Delhi NCR | Jaipur | Jodhpur | Udaipur | Kota | Bikaner | Ajmer | Rajasthan Cities | Mumbai | Bangalore | Hyderabad | Chennai | Pune | Pan-India Remote Architectural Desk.
         </div>
 
         {/* Copyright */}
