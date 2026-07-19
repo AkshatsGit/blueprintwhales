@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { Box, Compass, Eye, Sparkles, CheckCircle2, ArrowRight, ShieldCheck, Award, Globe } from 'lucide-react';
+import { Box, Compass, Eye, Sparkles, CheckCircle2, ArrowRight, Award, Globe } from 'lucide-react';
 
 export default function Hero() {
-  const [activeViewMode, setActiveViewMode] = useState('3d'); // '3d', '2d', 'interior'
+  const [activeViewMode, setActiveViewMode] = useState('3d');
 
   const views = {
     '3d': {
@@ -31,30 +31,30 @@ export default function Hero() {
   const activeView = views[activeViewMode];
 
   return (
-    <section style={{ padding: '60px 0 80px', position: 'relative', overflow: 'hidden' }}>
+    <section style={{ padding: '40px 0 60px', position: 'relative', overflow: 'hidden' }}>
       <div className="container">
-        <div className="grid-2" style={{ alignItems: 'center' }}>
+        <div className="grid-2" style={{ alignItems: 'center', gap: '30px' }}>
           
           {/* Hero Left Content */}
           <div>
             {/* Pills */}
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', marginBottom: '20px' }}>
-              <span className="badge-blueprint">
-                <Globe size={14} />
-                <span>Remote Architectural Studio • All India</span>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', marginBottom: '16px' }}>
+              <span className="badge-blueprint" style={{ fontSize: '0.75rem', padding: '4px 10px' }}>
+                <Globe size={12} />
+                <span>Remote Studio Desk</span>
               </span>
-              <span className="badge-amber">
-                <Award size={14} />
-                <span>Ram Mandir & Bullet Train Project Engineers</span>
+              <span className="badge-amber" style={{ fontSize: '0.75rem', padding: '4px 10px' }}>
+                <Award size={12} />
+                <span>Ayodhya Structural Engineers</span>
               </span>
             </div>
 
             {/* Main Title */}
             <h1 style={{
-              fontSize: 'clamp(2.4rem, 4.5vw, 3.6rem)',
-              lineHeight: 1.1,
+              fontSize: 'clamp(2.1rem, 4.2vw, 3.4rem)',
+              lineHeight: 1.15,
               fontWeight: 700,
-              marginBottom: '20px'
+              marginBottom: '16px'
             }}>
               Architects & 3D Vastu Blueprint Designers <br />
               <span className="text-gradient">Precision Blueprints. Breathtaking 3D Realities.</span>
@@ -62,24 +62,24 @@ export default function Hero() {
 
             {/* Subtext */}
             <p style={{
-              fontSize: '1.1rem',
+              fontSize: 'clamp(0.95rem, 2vw, 1.1rem)',
               color: '#94A3B8',
               lineHeight: 1.6,
-              marginBottom: '32px',
+              marginBottom: '24px',
               maxWidth: '560px'
             }}>
-              Blueprint Whales delivers 2D Vastu floorplans, 3D Revit building renders, and modern house interiors remotely to clients in <strong>Lucknow</strong>, <strong>Delhi NCR</strong>, <strong>Ghaziabad</strong>, <strong>Mumbai</strong>, and nationwide at uniform reasonable rates.
+              Blueprint Whales is the best designing architects network in Lucknow, Agra, Kanpur, Noida, and Rajasthan cities, providing premium 3D renders, Vastu blueprints, and house interior layouts remotely.
             </p>
 
             {/* CTA Group */}
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '16px', marginBottom: '40px' }}>
-              <a href="#vastu-calculator" className="btn-primary" style={{ padding: '14px 28px' }}>
-                <Sparkles size={18} />
-                <span>Calculate Uniform Rate</span>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '12px', marginBottom: '32px' }}>
+              <a href="#vastu-calculator" className="btn-primary" style={{ padding: '12px 22px', fontSize: '0.9rem' }}>
+                <Sparkles size={16} />
+                <span>Estimate Project Cost</span>
               </a>
-              <a href="#portfolio" className="btn-secondary" style={{ padding: '14px 28px' }}>
-                <span>Explore Works & Renders</span>
-                <ArrowRight size={16} />
+              <a href="#official-rates" className="btn-secondary" style={{ padding: '12px 22px', fontSize: '0.9rem' }}>
+                <span>Rates & Services</span>
+                <ArrowRight size={14} />
               </a>
             </div>
 
@@ -87,104 +87,106 @@ export default function Hero() {
             <div style={{
               display: 'grid',
               gridTemplateColumns: 'repeat(3, 1fr)',
-              gap: '16px',
-              paddingTop: '24px',
+              gap: '12px',
+              paddingTop: '20px',
               borderTop: '1px solid rgba(56, 189, 248, 0.15)'
             }}>
               <div>
-                <div style={{ fontSize: '1.8rem', fontWeight: 700, color: '#38BDF8', fontFamily: 'var(--font-heading)' }}>30+</div>
-                <div style={{ fontSize: '0.85rem', color: '#94A3B8' }}>3D/2D Heavy Softwares</div>
+                <div style={{ fontSize: 'clamp(1.4rem, 3vw, 1.8rem)', fontWeight: 700, color: '#38BDF8', fontFamily: 'var(--font-heading)' }}>30+</div>
+                <div style={{ fontSize: '0.75rem', color: '#94A3B8' }}>Heavy Softwares</div>
               </div>
               <div>
-                <div style={{ fontSize: '1.8rem', fontWeight: 700, color: '#F59E0B', fontFamily: 'var(--font-heading)' }}>10+</div>
-                <div style={{ fontSize: '0.85rem', color: '#94A3B8' }}>Years Architectural Exp</div>
+                <div style={{ fontSize: 'clamp(1.4rem, 3vw, 1.8rem)', fontWeight: 700, color: '#F59E0B', fontFamily: 'var(--font-heading)' }}>10+</div>
+                <div style={{ fontSize: '0.75rem', color: '#94A3B8' }}>Years Experience</div>
               </div>
               <div>
-                <div style={{ fontSize: '1.8rem', fontWeight: 700, color: '#10B981', fontFamily: 'var(--font-heading)' }}>100%</div>
-                <div style={{ fontSize: '0.85rem', color: '#94A3B8' }}>Vastu Directional</div>
+                <div style={{ fontSize: 'clamp(1.4rem, 3vw, 1.8rem)', fontWeight: 700, color: '#10B981', fontFamily: 'var(--font-heading)' }}>100%</div>
+                <div style={{ fontSize: '0.75rem', color: '#94A3B8' }}>Vastu Compliant</div>
               </div>
             </div>
 
           </div>
 
           {/* Hero Right Visual Interactive Preview */}
-          <div>
-            <div className="glass-panel" style={{ padding: '20px', position: 'relative' }}>
+          <div style={{ width: '100%', overflow: 'hidden' }}>
+            <div className="glass-panel" style={{ padding: '16px', position: 'relative' }}>
               
               {/* Tabs */}
               <div style={{
                 display: 'flex',
-                gap: '8px',
-                marginBottom: '16px',
+                gap: '4px',
+                marginBottom: '12px',
                 background: 'rgba(7, 13, 26, 0.8)',
-                padding: '6px',
-                borderRadius: '12px',
-                border: '1px solid rgba(56, 189, 248, 0.2)'
+                padding: '4px',
+                borderRadius: '10px',
+                border: '1px solid rgba(56, 189, 248, 0.2)',
+                overflowX: 'auto'
               }}>
                 <button
                   onClick={() => setActiveViewMode('3d')}
                   style={{
-                    flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '6px',
-                    padding: '8px 12px', borderRadius: '8px',
+                    flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '4px',
+                    padding: '8px 10px', borderRadius: '6px',
                     background: activeViewMode === '3d' ? '#00B4D8' : 'transparent',
                     color: activeViewMode === '3d' ? '#070D1A' : '#94A3B8',
-                    fontWeight: 600, fontSize: '0.85rem', border: 'none', cursor: 'pointer'
+                    fontWeight: 700, fontSize: '0.775rem', border: 'none', cursor: 'pointer', whiteSpace: 'nowrap'
                   }}
                 >
-                  <Box size={16} />
-                  <span>3D Villa Render</span>
+                  <Box size={14} />
+                  <span>3D Villa</span>
                 </button>
 
                 <button
                   onClick={() => setActiveViewMode('2d')}
                   style={{
-                    flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '6px',
-                    padding: '8px 12px', borderRadius: '8px',
+                    flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '4px',
+                    padding: '8px 10px', borderRadius: '6px',
                     background: activeViewMode === '2d' ? '#00B4D8' : 'transparent',
                     color: activeViewMode === '2d' ? '#070D1A' : '#94A3B8',
-                    fontWeight: 600, fontSize: '0.85rem', border: 'none', cursor: 'pointer'
+                    fontWeight: 700, fontSize: '0.775rem', border: 'none', cursor: 'pointer', whiteSpace: 'nowrap'
                   }}
                 >
-                  <Compass size={16} />
-                  <span>2D CAD Blueprint</span>
+                  <Compass size={14} />
+                  <span>2D CAD</span>
                 </button>
 
                 <button
                   onClick={() => setActiveViewMode('interior')}
                   style={{
-                    flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '6px',
-                    padding: '8px 12px', borderRadius: '8px',
+                    flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '4px',
+                    padding: '8px 10px', borderRadius: '6px',
                     background: activeViewMode === 'interior' ? '#00B4D8' : 'transparent',
                     color: activeViewMode === 'interior' ? '#070D1A' : '#94A3B8',
-                    fontWeight: 600, fontSize: '0.85rem', border: 'none', cursor: 'pointer'
+                    fontWeight: 700, fontSize: '0.775rem', border: 'none', cursor: 'pointer', whiteSpace: 'nowrap'
                   }}
                 >
-                  <Eye size={16} />
-                  <span>House Interior</span>
+                  <Eye size={14} />
+                  <span>Interior</span>
                 </button>
               </div>
 
               {/* View Frame */}
               <div style={{
-                position: 'relative', borderRadius: '12px', overflow: 'hidden',
-                border: '1px solid rgba(56, 189, 248, 0.3)', height: '350px', background: '#070D1A'
+                position: 'relative', borderRadius: '10px', overflow: 'hidden',
+                border: '1px solid rgba(56, 189, 248, 0.3)', height: 'clamp(200px, 35vw, 320px)', background: '#070D1A'
               }}>
                 <img
                   src={activeView.image}
                   alt={activeView.title}
                   style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'all 0.4s ease' }}
+                  loading="lazy"
                 />
 
                 <div style={{
-                  position: 'absolute', bottom: 0, left: 0, right: 0, padding: '16px',
+                  position: 'absolute', bottom: 0, left: 0, right: 0, padding: '12px',
                   background: 'linear-gradient(to top, rgba(7, 13, 26, 0.95), transparent)'
                 }}>
-                  <div style={{ fontSize: '1.1rem', fontWeight: 700, color: '#FFF' }}>{activeView.title}</div>
-                  <div style={{ fontSize: '0.825rem', color: '#CBD5E1', marginBottom: '8px' }}>{activeView.subtitle}</div>
-                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
+                  <div style={{ fontSize: '1rem', fontWeight: 700, color: '#FFF' }}>{activeView.title}</div>
+                  <div style={{ fontSize: '0.775rem', color: '#CBD5E1', marginBottom: '6px' }}>{activeView.subtitle}</div>
+                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '4px' }}>
                     {activeView.tags.map((t, idx) => (
                       <span key={idx} style={{
-                        fontSize: '0.725rem', padding: '3px 8px', borderRadius: '4px',
+                        fontSize: '0.675rem', padding: '2px 6px', borderRadius: '4px',
                         background: 'rgba(56, 189, 248, 0.15)', border: '1px solid rgba(56, 189, 248, 0.3)', color: '#E2E8F0'
                       }}>
                         ✓ {t}
@@ -195,11 +197,11 @@ export default function Hero() {
               </div>
 
               <div style={{
-                marginTop: '14px', fontSize: '0.8rem', color: '#64748B', textAlign: 'center',
-                display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px'
+                marginTop: '12px', fontSize: '0.75rem', color: '#64748B', textAlign: 'center',
+                display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '6px'
               }}>
-                <CheckCircle2 size={14} color="#10B981" />
-                <span>Municipal approval blueprints compliant for all Indian municipal boards</span>
+                <CheckCircle2 size={13} color="#10B981" />
+                <span>Municipal approval blueprint formats compliant nationwide</span>
               </div>
 
             </div>
